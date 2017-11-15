@@ -1,0 +1,22 @@
+02:15:59 **** Incremental Build of configuration Debug for project kmp ****
+make all 
+Building file: ../src/kmp.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/kmp.d" -MT"src/kmp.d" -o "src/kmp.o" "../src/kmp.cpp"
+../src/kmp.cpp: In function ‘int main()’:
+../src/kmp.cpp:91:17: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     char *txt = "ABABDABACDABABCABAB";
+                 ^
+../src/kmp.cpp:92:17: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     char *pat = "ABABCABAB";
+                 ^
+Finished building: ../src/kmp.cpp
+ 
+Building target: kmp
+Invoking: Cross G++ Linker
+g++  -o "kmp"  ./src/kmp.o   
+Finished building target: kmp
+ 
+
+02:16:01 Build Finished (took 2s.116ms)
+

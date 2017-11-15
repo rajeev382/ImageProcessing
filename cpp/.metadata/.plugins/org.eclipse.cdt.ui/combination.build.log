@@ -1,0 +1,19 @@
+19:13:56 **** Incremental Build of configuration Debug for project combination ****
+make all 
+Building file: ../src/combination.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/combination.d" -MT"src/combination.d" -o "src/combination.o" "../src/combination.cpp"
+../src/combination.cpp: In function ‘int main()’:
+../src/combination.cpp:42:14: warning: ‘n’ is used uninitialized in this function [-Wuninitialized]
+  bool check[n];
+              ^
+Finished building: ../src/combination.cpp
+ 
+Building target: combination
+Invoking: Cross G++ Linker
+g++  -o "combination"  ./src/combination.o   
+Finished building target: combination
+ 
+
+19:13:58 Build Finished (took 1s.306ms)
+

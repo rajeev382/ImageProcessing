@@ -1,0 +1,26 @@
+00:50:41 **** Incremental Build of configuration Debug for project recur ****
+make all 
+Building file: ../src/recur.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/recur.d" -MT"src/recur.d" -o "src/recur.o" "../src/recur.cpp"
+../src/recur.cpp: In function ‘int f(int, char*)’:
+../src/recur.cpp:40:23: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     return f(n/2,"abc") + f(n/2,"def");}
+                       ^
+../src/recur.cpp:40:38: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     return f(n/2,"abc") + f(n/2,"def");}
+                                      ^
+../src/recur.cpp: In function ‘int main()’:
+../src/recur.cpp:50:7: warning: unused variable ‘s’ [-Wunused-variable]
+  char s[]="abc";
+       ^
+Finished building: ../src/recur.cpp
+ 
+Building target: recur
+Invoking: GCC C++ Linker
+g++  -o "recur"  ./src/recur.o   
+Finished building target: recur
+ 
+
+00:50:43 Build Finished (took 1s.453ms)
+

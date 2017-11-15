@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : recur.cpp
+// Author      : rajeev
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+void abc(char *s)
+{
+    if(s[0] == '\0')
+        return;
+
+    abc(s + 1);
+    cout<<" k "<<s[0]<<endl;
+    abc(s + 1);
+    cout<<"----"<<endl;
+    cout<<s[0]<<endl;
+}
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	char s[]="abc";
+	abc(s);
+	return 0;
+}

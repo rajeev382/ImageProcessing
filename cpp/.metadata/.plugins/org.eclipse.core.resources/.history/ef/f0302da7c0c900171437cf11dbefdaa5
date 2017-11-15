@@ -1,0 +1,39 @@
+//============================================================================
+// Name        : Permutation.cpp
+// Author      : rajeev
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<string.h>
+using namespace std;
+void Pemutation(int depth,char *permutation,int *used,char *original)
+{
+	int length=strlen(original);
+	if(depth==length)
+		cout<<permutation<<endl;
+	else
+	{
+		for(int i=0;i<length;i++)
+		{if(!used[i])
+		{
+			cout<<i;
+			cout<<permutation;
+			used[i]=1;
+			permutation[depth]=original[i];
+			Pemutation(depth+1,permutation,used,original);
+			used[i]=0;
+		}
+		cout<<endl;
+		}
+	}
+	}
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	int used[]={1,2,3,4};
+	char *original="aghnlj";
+	Pemutation(0,original,used,original);
+	return 0;
+}
