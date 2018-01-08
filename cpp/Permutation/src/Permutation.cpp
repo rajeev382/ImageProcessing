@@ -51,4 +51,4 @@ int main()
     permute(str, 0, n-1);
     cout<<k;
     return 0;
-}
+
